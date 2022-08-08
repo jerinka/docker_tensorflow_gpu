@@ -17,7 +17,9 @@ assert end - start < 0.2, 'Took more than 0.2 sec, typical max time is 0.15 sec'
 
 ## Nvidia smi check
 
-`docker run -it --runtime=nvidia nvidia/cuda:11.4.0-base-ubuntu20.04 nvidia-smi`
+`docker run -it --runtime=nvidia nvidia/cuda:11.4.0-base-ubuntu20.04 nvidia-smi`\
+or older nvidia docker,\
+`docker run --rm --gpus all nvidia/cuda:11.4.0-base-ubuntu20.04 nvidia-smi`\
 
 ## How to fix this?
 
